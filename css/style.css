@@ -102,3 +102,138 @@ body {
 #menu-btn {
   display: none;
 }
+
+.header .search-form {
+  position: absolute;
+  /* top: 0rem; */
+  right: 25.5rem;
+  width: 50rem;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: none;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  background-color: #eee;
+}
+
+.header .search-form.active {
+  right: 28.5rem;
+  display: flex;
+  transition: all 0.5s linear;
+}
+
+.header input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  color: var(--black);
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.header label {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header label:hover {
+  color: var(--green);
+}
+
+.shopping-cart {
+  width: 30rem;
+  position: absolute;
+  top: 5.5rem;
+  display: none;
+  right: 5rem;
+  border-radius: 0.5rem;
+  padding: 1em;
+  background-color: #fff;
+  transition: all 0.5s linear;
+}
+
+.shopping-cart.active {
+  top: 8.8rem;
+  display: block;
+}
+
+.shopping-cart .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.shopping-cart .row .shopping-cart-img {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.shopping-cart .row .shopping-cart-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.shopping-cart .row .shopping-cart-content {
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+}
+.shopping-cart .row .shopping-cart-content h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.shopping-cart .row .shopping-cart-content .cart-price-quantity {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.shopping-cart
+  .row
+  .shopping-cart-content
+  .cart-price-quantity
+  .cart-quantity
+  i {
+  color: var(--light-color);
+  font-size: 1.1rem;
+  background: #eee;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.shopping-cart .row .cart-delete-btn i {
+  font-size: 2em;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.shopping-cart .cart-total {
+  font-size: 1.4rem;
+  text-align: center;
+  /* padding: 0.5em; */
+  background-color: #eee;
+  border-radius: 0.5rem;
+  color: var(--black);
+}
+
+.shopping-cart .cart-checkout-btn {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  border: 1.5px solid var(--black);
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  color: var(--black);
+}
