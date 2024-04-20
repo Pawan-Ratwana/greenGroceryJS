@@ -154,12 +154,14 @@ body {
   border-radius: 0.5rem;
   padding: 1em;
   background-color: #fff;
+  box-shadow: var(--box-shadow);
   transition: all 0.5s linear;
 }
 
 .shopping-cart.active {
   top: 8.8rem;
   display: block;
+  transition: all 0.5s linear;
 }
 
 .shopping-cart .row {
@@ -226,14 +228,64 @@ body {
   color: var(--black);
 }
 
-.shopping-cart .cart-checkout-btn {
-  font-size: 2rem;
-  padding: 0.5rem 0;
-  border: 1.5px solid var(--black);
-  text-align: center;
-  margin-top: 10px;
-  cursor: pointer;
-  background-color: #eee;
+.shopping-cart .btn {
+  display: block;
+}
+
+.cart-login {
+  width: 30rem;
+  position: absolute;
+  top: 5.5rem;
+  display: none;
+  right: 5rem;
   border-radius: 0.5rem;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  transition: all 0.5s linear;
+}
+
+.cart-login.active {
+  top: 8.9rem;
+  display: block;
+  transition: all 0.5s linear;
+}
+
+.cart-login h2 {
+  font-size: 2rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
   color: var(--black);
+  text-transform: uppercase;
+}
+
+.cart-login input {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 0.3rem 0.8rem;
+  border: var(--border);
+  outline: var(--outline);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--black);
+  background-color: #eee;
+}
+
+.cart-login .btn {
+  display: block;
+  width: 100%;
+}
+
+.cart-login p {
+  margin: 0.5rem 2rem;
+  font-size: 1.3rem;
+}
+
+.cart-login p a {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+.cart-login p a:hover {
+  color: var(--light-color);
 }
