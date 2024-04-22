@@ -36,3 +36,10 @@ section {
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
   z-index: 0;
 }
+
+.box.hide {
+  display: none;
+}
+.section.hide {
+  display: none;
+}
