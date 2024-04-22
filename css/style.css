@@ -41,7 +41,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-
+  z-index: 100;
   padding: 2rem 9%;
   background-color: #fff;
   box-shadow: var(--box-shadow);
@@ -347,6 +347,68 @@ body {
   font-weight: 500;
 }
 
+/* features */
+
+.box-container {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem; */
+  /* using grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
+.box-container .box {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  max-height: 400px;
+  box-shadow: var(--box-shadow);
+}
+
+.box-container .box:hover {
+  box-shadow: 1px 1px 12px 5px var(--green);
+}
+
+.box-container .box .box-img {
+  /* width: 28rem; */
+  padding: 2rem 4rem;
+  /* height: 50%; */
+  height: 190px;
+  border-radius: 5rem;
+  overflow: hidden;
+  /* background: #000; */
+}
+
+.box-container .box .box-img img {
+  width: 100%;
+  height: 180px;
+  border-radius: 0.5rem;
+}
+.box-container .box .box-content {
+  padding: 2rem;
+}
+.box-container .box .box-content h2 {
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  color: var(--black);
+  line-height: 28px;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.box-container .box .box-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--light-color);
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+
 /* media query or Responsive page */
 
 @media (max-width: 990px) {
@@ -369,6 +431,10 @@ body {
 }
 
 @media (max-width: 700px) {
+  .heading {
+    font-size: 3rem !important;
+  }
+
   #menu-btn {
     display: inline-block;
   }
@@ -416,6 +482,9 @@ body {
 @media (max-width: 314px) {
   html {
     font-size: 43%;
+  }
+  .heading {
+    font-size: 2.5rem !important;
   }
 }
 @media (max-width: 275px) {

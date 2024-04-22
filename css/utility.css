@@ -19,3 +19,20 @@
 section {
   padding: 2rem 9%;
 }
+
+.heading {
+  color: var(--black);
+  font-size: 4.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.heading span {
+  background-color: var(--green);
+  color: #fff;
+  padding: 0.5rem 3rem;
+  display: inline-block;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  z-index: 0;
+}
