@@ -569,6 +569,113 @@ body {
   margin-bottom: 2.5rem;
 }
 
+/* footer section */
+
+.footer {
+  background: #fff;
+  padding: 0;
+}
+
+.footer .box-container {
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  background: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  gap: 2rem;
+}
+
+.footer .box-container .box {
+  width: 26rem;
+  background: transparent;
+  box-shadow: none;
+  /* border-left: 1px solid var(--light-color); */
+}
+
+.footer .box-container .box .box-content .box-content-heading {
+  text-align: left;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.footer .box-container .box .box-content .box-content-heading span {
+  color: var(--green);
+}
+
+.footer-company-para {
+  padding: 2rem 0;
+  font-size: 1.3rem !important;
+}
+.footer .box-container .box .box-content p {
+  text-align: justify;
+  padding: 5px 0;
+  font-size: 1.5rem;
+}
+
+.footer .box-container .box .box-content .share-icons {
+  gap: 2rem;
+}
+
+.footer .box-container .box .box-content .share-icons a {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 2.1rem;
+  background-color: #e7e6e6;
+  color: var(--black);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.footer .box-container .box ul {
+  padding-left: 2rem;
+  /* padding-top: 1.5rem; */
+}
+
+.footer .box-container .box ul li {
+  padding: 5px 0;
+  font-size: 1.3rem;
+  color: var(--green);
+}
+
+.footer .box-container .box ul li a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+.footer .box-container .box ul li::marker {
+  content: "\f061  ";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.footer .box-container .box .box-content input {
+  padding: 0.9rem 2.2rem;
+  width: 90%;
+  margin: 1rem 0;
+  outline: none;
+  font-size: 1.5rem;
+  border: 1.2px solid var(--light-color);
+  border-radius: 4rem;
+}
+
+.footer-content {
+  padding: 10px 0;
+  text-align: center;
+  padding-top: 2rem;
+  /* border-top: 1px solid; */
+}
+
+.footer-content p {
+  font-size: 1.5rem;
+}
+
+.footer-content p span {
+  color: var(--green);
+  font-weight: 500;
+}
+
 /* media query or Responsive page */
 
 @media (max-width: 990px) {
@@ -581,7 +688,8 @@ body {
     padding: 2rem;
   }
 
-  section {
+  section,
+  .padding-side {
     padding: 2rem 0;
   }
 

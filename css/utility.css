@@ -16,7 +16,8 @@
   background-color: var(--green);
 }
 
-section {
+section,
+.padding-side {
   padding: 2rem 9%;
 }
 
