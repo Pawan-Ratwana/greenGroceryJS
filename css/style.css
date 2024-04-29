@@ -347,6 +347,10 @@ body {
   font-weight: 500;
 }
 
+.home-container .btn a {
+  color: var(--black);
+}
+
 /* features */
 
 .box-container {
@@ -409,6 +413,10 @@ body {
   letter-spacing: 0.5px;
 }
 
+.box-container .box .box-content .btn {
+  display: block;
+}
+
 .moreContent {
   /* margin-top: 10rem; */
   display: none;
@@ -449,6 +457,73 @@ body {
   font-size: 1.7rem;
   color: var(--black);
   font-weight: 600;
+}
+
+/* product section */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5;
+  margin-bottom: 2rem;
+}
+
+.box {
+  width: 32rem;
+  max-height: 450px;
+  padding: 2rem 0;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: var(--box-shadow);
+}
+
+.box:hover {
+  box-shadow: 1px 1px 12px 5px var(--green);
+}
+
+.box .box-img {
+  width: 100%;
+  padding: 0rem 4rem;
+  padding-bottom: 2rem;
+  height: 200px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.box .box-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.box .box-content {
+  padding: 0 3rem;
+}
+
+.box .box-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--light-color);
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.box .box-content .star {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: orangered;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.box .btn {
+  display: block;
+}
+
+.products .box-container .box .box-content p {
+  text-align: center;
 }
 
 /* media query or Responsive page */

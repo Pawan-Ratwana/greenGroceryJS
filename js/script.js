@@ -37,6 +37,17 @@ document.querySelector('#menu-btn').onclick = () => {
 }
 
 
+
+window.onscroll = () => {
+    searchForm.classList.remove('active');
+    shoppinCart.classList.remove('active');
+    cartLogin.classList.remove('active');
+    navbar.classList.remove('active');
+    showreadLess();
+}
+
+/* ============ style for readmore and readless=================== */
+
 const boxs = document.querySelectorAll('.box');
 const moreContent = document.querySelector('.moreContent');
 
@@ -50,14 +61,6 @@ function showReadMore(btnId, btnClass) {
     }
 }
 
-window.onscroll = () => {
-    searchForm.classList.remove('active');
-    shoppinCart.classList.remove('active');
-    cartLogin.classList.remove('active');
-    navbar.classList.remove('active');
-}
-
-/* ============ style for readmore and readless=================== */
 
 // show the quality feature
 const qualityFeatureBtn = document.querySelector('#qualityFeatureBtn');
@@ -75,15 +78,18 @@ const ePayment = document.querySelector('#ePayment');
 showReadMore(ePaymentBtn, ePayment);
 
 // function for readLess
-const readLess = document.querySelectorAll('.readLess')
-readLess.forEach((read) => {
-    read.onclick = () => {
-        moreContent.classList.remove('active');
-        freeDelivery.classList.remove('active');
-        ePayment.classList.remove('active');
-        boxs.forEach((box) => {
-            box.classList.remove('hide')
-        })
-    }
-})
+function showreadLess() {
+    const readLess = document.querySelectorAll('.readLess')
+    readLess.forEach((read) => {
+        read.onclick = () => {
+            moreContent.classList.remove('active');
+            freeDelivery.classList.remove('active');
+            ePayment.classList.remove('active');
+            boxs.forEach((box) => {
+                box.classList.remove('hide')
+            })
+        }
+    });
+}
 
+showreadLess();
