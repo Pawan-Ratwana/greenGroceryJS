@@ -544,6 +544,31 @@ body {
   margin-bottom: 2rem;
 }
 
+/* review section  */
+.review .box .box-img {
+  height: 40%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.review .box .box-img img {
+  width: 150px;
+  height: 132px;
+  border-radius: 50%;
+}
+
+.review .box p {
+  text-align: justify;
+}
+
+.review .wrapper {
+  height: 100%;
+}
+
+.review .wrapper .box {
+  margin-bottom: 2.5rem;
+}
+
 /* media query or Responsive page */
 
 @media (max-width: 990px) {
