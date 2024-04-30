@@ -495,7 +495,8 @@ body {
 }
 
 .fruitWrapper.active,
-.vegetableWrapper.active {
+.vegetableWrapper.active,
+.dairyWrapper.active {
   height: 100%;
 }
 

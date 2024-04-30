@@ -46,11 +46,35 @@ let vegetableProductList = [
     new ProductItemContructor(20, "Corn", 15, "/img/vegetable/Corn.jpg", 3.5),
 ]
 
+// Define array containing Dairy products
+const dairyProductList = [
+    new ProductItemContructor(1, "Milk", 65, "/img/Dairy/milk.jpg", 4.5),
+    new ProductItemContructor(2, "Cheese", 65, "/img/Dairy/Cheese.jpg", 4.5),
+    new ProductItemContructor(3, "Yogurt", 65, "/img/Dairy/Yogurt.jpg", 4.5),
+    new ProductItemContructor(4, "Butter", 65, "/img/Dairy/Butter.jpg", 4.5),
+    new ProductItemContructor(5, "Cream", 65, "/img/Dairy/Cream.jpg", 4.5),
+    new ProductItemContructor(6, "Sour cream", 65, "/img/Dairy/Sour cream.jpg", 4.5),
+    new ProductItemContructor(7, "Cottage cheese", 65, "/img/Dairy/Cottage cheese.jpg", 4.5),
+    new ProductItemContructor(8, "Ice cream", 65, "/img/Dairy/Ice cream.jpg", 4.5),
+    new ProductItemContructor(9, "Whipped cream", 65, "/img/Dairy/Whipped cream.jpg", 4.5),
+    new ProductItemContructor(10, "Cream cheese", 65, "/img/Dairy/Cream cheese.jpg", 4.5),
+    new ProductItemContructor(11, "Evaporated milk", 65, "/img/Dairy/Evaporated milk.jpg", 4.5),
+    new ProductItemContructor(12, "Buttermilk", 65, "/img/Dairy/Buttermilk.jpg", 4.5),
+    new ProductItemContructor(13, "Ghee", 65, "/img/Dairy/Ghee.jpg", 4.5),
+    new ProductItemContructor(14, "Ricotta cheese", 65, "/img/Dairy/Ricotta cheese.jpg", 4.5),
+    new ProductItemContructor(15, "Mascarpone cheese", 65, "/img/Dairy/Mascarpone cheese.jpg", 4.5),
+    new ProductItemContructor(16, "Feta cheese", 65, "/img/Dairy/Feta cheese.jpg", 4.5),
+    new ProductItemContructor(17, "Parmesan cheese", 65, "/img/Dairy/Parmesan cheese.jpg", 4.5),
+    new ProductItemContructor(18, "Condensed milk", 65, "/img/Dairy/Condensed milk.jpg", 4.5),
+    new ProductItemContructor(19, "Mozzarella cheese", 65, "/img/Dairy/Mozzarella cheese.jpg", 4.5),
+    new ProductItemContructor(20, "Cheddar cheese", 65, "/img/Dairy/Cheddar cheese.jpg", 4.5),
+]
 
 /* ============ functionality for Display data on page=================== */
 // Get references to the wrapper elements in the HTML
 const fruitWrapper = document.getElementById("fruitWrapper");
 const vegetableWrapper = document.getElementById("vegetableWrapper");
+const dairyWrapper = document.getElementById("dairyWrapper");
 
 // Function to generate HTML for a product element
 function generateProductHtml(element, ClassName, idName) {
@@ -93,6 +117,17 @@ function displayVegetableProduct() {
     });
 }
 
+// Function to display Dairy products on the page
+function displayDairyProduct() {
+    // Clear previous content from the Dairy wrapper
+    dairyWrapper.innerHTML = '';
+    // Iterate over each Dairy product and generate HTML for display
+    dairyProductList.forEach((dairy) => {
+        const dairyProductHtml = generateProductHtml(dairy, dairyWrapper, dairyWrapper);
+        dairyWrapper.innerHTML += dairyProductHtml;
+    })
+}
+
 // Function to generate HTML for star ratings
 function generateStarRatingHtml(rating) {
     // Calculate the number of full stars
@@ -108,6 +143,7 @@ function generateStarRatingHtml(rating) {
 // Display fruit and vegetable products when the page loads
 displayFruitProduct();
 displayVegetableProduct();
+displayDairyProduct();
 
 
 
@@ -116,6 +152,7 @@ displayVegetableProduct();
 // Get references to the "View All Product" buttons
 const vegetablesMoreProductBtn = document.getElementById("vegetablesMoreProductBtn");
 const fruitsMoreProductBtn = document.getElementById("fruitsMoreProductBtn");
+const dairyMoreProductBtn = document.getElementById("dairyMoreProductBtn");
 
 // Event listener for the "View All Product" button for fruits
 function showFruitMoreProduct() {
@@ -125,7 +162,9 @@ function showFruitMoreProduct() {
 
 
         vegetableWrapper.classList.remove('active');
+        dairyWrapper.classList.remove('active');
         showToggleWrapper(vegetableWrapper, vegetablesMoreProductBtn);
+        showToggleWrapper(dairyWrapper, dairyMoreProductBtn);
 
     })
 }
@@ -138,8 +177,21 @@ vegetablesMoreProductBtn.addEventListener('click', () => {
 
 
     fruitWrapper.classList.remove('active');
+    dairyWrapper.classList.remove('active');
     showToggleWrapper(fruitWrapper, fruitsMoreProductBtn);
+    showToggleWrapper(dairyWrapper, dairyMoreProductBtn);
 })
+
+// Event listener for the "View All Product" button for Dairy Product
+dairyMoreProductBtn.addEventListener('click', () => {
+    dairyWrapper.classList.toggle('active');
+    showToggleWrapper(dairyWrapper, dairyMoreProductBtn);
+
+    fruitWrapper.classList.remove('active');
+    vegetableWrapper.classList.remove('active');
+    showToggleWrapper(fruitWrapper, fruitsMoreProductBtn);
+    showToggleWrapper(vegetableWrapper, vegetablesMoreProductBtn);
+});
 
 // Function to toggle the text content of the "View All Product" buttons based on the active state of the wrapper
 function showToggleWrapper(wrapper, button) {
