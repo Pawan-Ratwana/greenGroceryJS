@@ -256,7 +256,7 @@ body {
   transition: all 0.5s linear;
 }
 
-.cart-login h2 {
+.cart-input h2 {
   font-size: 2rem;
   padding: 0.8rem 2rem;
   text-align: center;
@@ -264,7 +264,7 @@ body {
   text-transform: uppercase;
 }
 
-.cart-login input {
+.cart-input input {
   width: 100%;
   margin: 0.8rem 0;
   padding: 0.3rem 0.8rem;
@@ -276,23 +276,43 @@ body {
   background-color: #eee;
 }
 
-.cart-login .btn {
+.cart-input .btn {
   display: block;
   width: 100%;
 }
 
-.cart-login p {
+.cart-input p {
   margin: 0.5rem 2rem;
   font-size: 1.3rem;
 }
 
-.cart-login p a {
+.cart-input p a {
   text-decoration: underline;
   color: var(--green);
 }
 
-.cart-login p a:hover {
+.cart-input p a:hover {
   color: var(--light-color);
+}
+
+/* cart signup  */
+.cart-signup {
+  position: absolute;
+  top: 8.9rem;
+  right: 5rem;
+  background-color: #fff;
+  width: 30rem;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  transition: all 0.5s linear;
+  display: none;
+}
+
+.cart-signup.active {
+  right: 5rem;
+  display: block;
+  transition: all 0.5s linear;
 }
 
 /* home section */
@@ -349,6 +369,10 @@ body {
 
 .home-container .btn a {
   color: var(--black);
+}
+
+.home-container .btn a:hover {
+  color: #fff;
 }
 
 /* features */

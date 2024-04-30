@@ -114,16 +114,27 @@
 
         </div>
 
-        <div class="cart-login">
+        <div class="cart-login cart-input">
             <form action="index.html">
                 <h2>LogIn Now</h2>
                 <input type="email" placeholder="Your email" class="email" name="email">
                 <input type="password" name="password" placeholder="Your Password" class="pasword">
                 <button class="btn" type="submit">Log In</button>
                 <p>Forget your Password <a href="">click here</a></p>
-                <p>Don't have an account? <a href="">create new</a></p>
+                <p>Don't have an account? <a href="#cart-signup" id="cart-signup">create new</a></p>
             </form>
 
+        </div>
+
+        <div class="cart-signup cart-input">
+            <form action="">
+                <h2>Create New Account</h2>
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="password" placeholder="Enter Your Password" class="password">
+                <input type="password" placeholder="Enter Your Confirm Password" class="confirm_password">
+                <button class="btn">Create New Account</button>
+                <p>If already account? <a href="#login-btn" id="login-link">Login</a></p>
+            </form>
         </div>
 
     </header>
