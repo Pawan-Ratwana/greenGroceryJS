@@ -4,6 +4,12 @@ const cartLogin = document.querySelector('.cart-login');
 const navbar = document.querySelector('.navbar');
 const cartSignup = document.querySelector('.cart-signup');
 
+// Add an event listener for the DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function () {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+});
+
 
 /* ============ style for header section=================== */
 

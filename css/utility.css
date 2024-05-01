@@ -9,6 +9,7 @@
   background-color: #eee;
   border-radius: 0.5rem;
   color: var(--black);
+  user-select: none;
 }
 
 .btn:hover {

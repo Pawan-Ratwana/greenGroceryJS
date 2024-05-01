@@ -204,6 +204,10 @@ body {
   justify-content: space-between;
   font-size: 1.4rem;
 }
+
+.shopping-cart .row .shopping-cart-content .cart-price-quantity span {
+  user-select: none;
+}
 .shopping-cart
   .row
   .shopping-cart-content
@@ -211,7 +215,7 @@ body {
   .cart-quantity
   i {
   color: var(--light-color);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   background: #eee;
   border-radius: 1px;
   cursor: pointer;

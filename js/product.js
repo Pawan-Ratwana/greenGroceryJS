@@ -10,64 +10,64 @@ function ProductItemContructor(id, name, price, image, rating,) {
 
 // Define array containing fruit products
 let fruitProductList = [
-    new ProductItemContructor(1, "Apple", 50, "/img/fruits/Apple.jpg", 1.5),
-    new ProductItemContructor(2, "Banana", 40, "/img/fruits/Banana.jpg", 5),
-    new ProductItemContructor(3, "Orange", 30, "/img/fruits/Orange.jpg", 4),
-    new ProductItemContructor(4, "Mango", 90, "/img/fruits/Mango.jpg", 4.5),
-    new ProductItemContructor(5, "Grape", 100, "/img/fruits/Grape.jpg", 3.5),
-    new ProductItemContructor(6, "Pineapple", 180, "/img/fruits/Pineapple.jpg", 2.5),
-    new ProductItemContructor(7, "Watermelon", 20, "/img/fruits/Watermelon.jpg", 1),
-    new ProductItemContructor(8, "Strawberry", 150, "/img/fruits/Strawberry.jpg", 2.5),
-    new ProductItemContructor(9, "Kiwi", 35, "/img/fruits/Kiwi.jpg", 2),
-    new ProductItemContructor(10, "Peach", 190, "/img/fruits/Peach.jpg", 4.5),
+    new ProductItemContructor("f1", "Apple", 50, "/img/fruits/Apple.jpg", 1.5),
+    new ProductItemContructor("f2", "Banana", 40, "/img/fruits/Banana.jpg", 5),
+    new ProductItemContructor("f3", "Orange", 30, "/img/fruits/Orange.jpg", 4),
+    new ProductItemContructor("f4", "Mango", 90, "/img/fruits/Mango.jpg", 4.5),
+    new ProductItemContructor("f5", "Grape", 100, "/img/fruits/Grape.jpg", 3.5),
+    new ProductItemContructor("f6", "Pineapple", 180, "/img/fruits/Pineapple.jpg", 2.5),
+    new ProductItemContructor("f7", "Watermelon", 20, "/img/fruits/Watermelon.jpg", 1),
+    new ProductItemContructor("f8", "Strawberry", 150, "/img/fruits/Strawberry.jpg", 2.5),
+    new ProductItemContructor("f9", "Kiwi", 35, "/img/fruits/Kiwi.jpg", 2),
+    new ProductItemContructor("f10", "Peach", 190, "/img/fruits/Peach.jpg", 4.5),
 ]
 
 // Define array containing vegetable products
 let vegetableProductList = [
-    new ProductItemContructor(1, "Tomato", 15, "/img/vegetable/Tomato.jpg", 3.5),
-    new ProductItemContructor(2, "Potato", 15, "/img/vegetable/Potato.jpg", 3.5),
-    new ProductItemContructor(3, "Carrot", 15, "/img/vegetable/Carrot.jpg", 3.5),
-    new ProductItemContructor(4, "Onion", 15, "/img/vegetable/Onion.jpg", 3.5),
-    new ProductItemContructor(5, "Cucumber", 15, "/img/vegetable/Cucumber.jpg", 3.5),
-    new ProductItemContructor(6, "Spinach", 15, "/img/vegetable/Spinach.jpg", 3.5),
-    new ProductItemContructor(7, "Green Bell Pepper", 15, "/img/vegetable/Green Bell Pepper.jpg", 3.5),
-    new ProductItemContructor(8, "Broccoli", 15, "/img/vegetable/Broccoli.jpg", 3.5),
-    new ProductItemContructor(9, "Cauliflower", 15, "/img/vegetable/Cauliflower.jpg", 3.5),
-    new ProductItemContructor(10, "Lettuce", 15, "/img/vegetable/Lettuce.jpg", 3.5),
-    new ProductItemContructor(11, "Garlic", 15, "/img/vegetable/Garlic.jpg", 3.5),
-    new ProductItemContructor(12, "Eggplant", 15, "/img/vegetable/Eggplant.jpg", 3.5),
-    new ProductItemContructor(13, "Green beans", 15, "/img/vegetable/Green beans.jpg", 3.5),
-    new ProductItemContructor(14, "Zucchini", 15, "/img/vegetable/Zucchini.jpg", 3.5),
-    new ProductItemContructor(15, "Radish", 15, "/img/vegetable/Radish.jpg", 3.5),
-    new ProductItemContructor(16, "Pumpkin", 15, "/img/vegetable/Pumpkin.jpg", 3.5),
-    new ProductItemContructor(17, "Sweet potato", 15, "/img/vegetable/Sweet potato.jpg", 3.5),
-    new ProductItemContructor(18, "Peas", 15, "/img/vegetable/Peas.jpg", 3.5),
-    new ProductItemContructor(19, "Mushroom", 15, "/img/vegetable/Mushroom.jpg", 3.5),
-    new ProductItemContructor(20, "Corn", 15, "/img/vegetable/Corn.jpg", 3.5),
+    new ProductItemContructor("v1", "Tomato", 15, "/img/vegetable/Tomato.jpg", 3.5),
+    new ProductItemContructor("v2", "Potato", 15, "/img/vegetable/Potato.jpg", 3.5),
+    new ProductItemContructor("v3", "Carrot", 15, "/img/vegetable/Carrot.jpg", 3.5),
+    new ProductItemContructor("v4", "Onion", 15, "/img/vegetable/Onion.jpg", 3.5),
+    new ProductItemContructor("v5", "Cucumber", 15, "/img/vegetable/Cucumber.jpg", 3.5),
+    new ProductItemContructor("v6", "Spinach", 15, "/img/vegetable/Spinach.jpg", 3.5),
+    new ProductItemContructor("v7", "Green Bell Pepper", 15, "/img/vegetable/Green Bell Pepper.jpg", 3.5),
+    new ProductItemContructor("v8", "Broccoli", 15, "/img/vegetable/Broccoli.jpg", 3.5),
+    new ProductItemContructor("v9", "Cauliflower", 15, "/img/vegetable/Cauliflower.jpg", 3.5),
+    new ProductItemContructor("v10", "Lettuce", 15, "/img/vegetable/Lettuce.jpg", 3.5),
+    new ProductItemContructor("v11", "Garlic", 15, "/img/vegetable/Garlic.jpg", 3.5),
+    new ProductItemContructor("v12", "Eggplant", 15, "/img/vegetable/Eggplant.jpg", 3.5),
+    new ProductItemContructor("v13", "Green beans", 15, "/img/vegetable/Green beans.jpg", 3.5),
+    new ProductItemContructor("v14", "Zucchini", 15, "/img/vegetable/Zucchini.jpg", 3.5),
+    new ProductItemContructor("v15", "Radish", 15, "/img/vegetable/Radish.jpg", 3.5),
+    new ProductItemContructor("v16", "Pumpkin", 15, "/img/vegetable/Pumpkin.jpg", 3.5),
+    new ProductItemContructor("v17", "Sweet potato", 15, "/img/vegetable/Sweet potato.jpg", 3.5),
+    new ProductItemContructor("v18", "Peas", 15, "/img/vegetable/Peas.jpg", 3.5),
+    new ProductItemContructor("v19", "Mushroom", 15, "/img/vegetable/Mushroom.jpg", 3.5),
+    new ProductItemContructor("v20", "Corn", 15, "/img/vegetable/Corn.jpg", 3.5),
 ]
 
 // Define array containing Dairy products
 const dairyProductList = [
-    new ProductItemContructor(1, "Milk", 65, "/img/Dairy/milk.jpg", 4.5),
-    new ProductItemContructor(2, "Cheese", 65, "/img/Dairy/Cheese.jpg", 4.5),
-    new ProductItemContructor(3, "Yogurt", 65, "/img/Dairy/Yogurt.jpg", 4.5),
-    new ProductItemContructor(4, "Butter", 65, "/img/Dairy/Butter.jpg", 4.5),
-    new ProductItemContructor(5, "Cream", 65, "/img/Dairy/Cream.jpg", 4.5),
-    new ProductItemContructor(6, "Sour cream", 65, "/img/Dairy/Sour cream.jpg", 4.5),
-    new ProductItemContructor(7, "Cottage cheese", 65, "/img/Dairy/Cottage cheese.jpg", 4.5),
-    new ProductItemContructor(8, "Ice cream", 65, "/img/Dairy/Ice cream.jpg", 4.5),
-    new ProductItemContructor(9, "Whipped cream", 65, "/img/Dairy/Whipped cream.jpg", 4.5),
-    new ProductItemContructor(10, "Cream cheese", 65, "/img/Dairy/Cream cheese.jpg", 4.5),
-    new ProductItemContructor(11, "Evaporated milk", 65, "/img/Dairy/Evaporated milk.jpg", 4.5),
-    new ProductItemContructor(12, "Buttermilk", 65, "/img/Dairy/Buttermilk.jpg", 4.5),
-    new ProductItemContructor(13, "Ghee", 65, "/img/Dairy/Ghee.jpg", 4.5),
-    new ProductItemContructor(14, "Ricotta cheese", 65, "/img/Dairy/Ricotta cheese.jpg", 4.5),
-    new ProductItemContructor(15, "Mascarpone cheese", 65, "/img/Dairy/Mascarpone cheese.jpg", 4.5),
-    new ProductItemContructor(16, "Feta cheese", 65, "/img/Dairy/Feta cheese.jpg", 4.5),
-    new ProductItemContructor(17, "Parmesan cheese", 65, "/img/Dairy/Parmesan cheese.jpg", 4.5),
-    new ProductItemContructor(18, "Condensed milk", 65, "/img/Dairy/Condensed milk.jpg", 4.5),
-    new ProductItemContructor(19, "Mozzarella cheese", 65, "/img/Dairy/Mozzarella cheese.jpg", 4.5),
-    new ProductItemContructor(20, "Cheddar cheese", 65, "/img/Dairy/Cheddar cheese.jpg", 4.5),
+    new ProductItemContructor("d1", "Milk", 65, "/img/Dairy/milk.jpg", 4.5),
+    new ProductItemContructor("d2", "Cheese", 65, "/img/Dairy/Cheese.jpg", 4.5),
+    new ProductItemContructor("d3", "Yogurt", 65, "/img/Dairy/Yogurt.jpg", 4.5),
+    new ProductItemContructor("d4", "Butter", 65, "/img/Dairy/Butter.jpg", 4.5),
+    new ProductItemContructor("d5", "Cream", 65, "/img/Dairy/Cream.jpg", 4.5),
+    new ProductItemContructor("d6", "Sour cream", 65, "/img/Dairy/Sour cream.jpg", 4.5),
+    new ProductItemContructor("d7", "Cottage cheese", 65, "/img/Dairy/Cottage cheese.jpg", 4.5),
+    new ProductItemContructor("d8", "Ice cream", 65, "/img/Dairy/Ice cream.jpg", 4.5),
+    new ProductItemContructor("d9", "Whipped cream", 65, "/img/Dairy/Whipped cream.jpg", 4.5),
+    new ProductItemContructor("d10", "Cream cheese", 65, "/img/Dairy/Cream cheese.jpg", 4.5),
+    new ProductItemContructor("d11", "Evaporated milk", 65, "/img/Dairy/Evaporated milk.jpg", 4.5),
+    new ProductItemContructor("d12", "Buttermilk", 65, "/img/Dairy/Buttermilk.jpg", 4.5),
+    new ProductItemContructor("d13", "Ghee", 65, "/img/Dairy/Ghee.jpg", 4.5),
+    new ProductItemContructor("d14", "Ricotta cheese", 65, "/img/Dairy/Ricotta cheese.jpg", 4.5),
+    new ProductItemContructor("d15", "Mascarpone cheese", 65, "/img/Dairy/Mascarpone cheese.jpg", 4.5),
+    new ProductItemContructor("d16", "Feta cheese", 65, "/img/Dairy/Feta cheese.jpg", 4.5),
+    new ProductItemContructor("d17", "Parmesan cheese", 65, "/img/Dairy/Parmesan cheese.jpg", 4.5),
+    new ProductItemContructor("d18", "Condensed milk", 65, "/img/Dairy/Condensed milk.jpg", 4.5),
+    new ProductItemContructor("d19", "Mozzarella cheese", 65, "/img/Dairy/Mozzarella cheese.jpg", 4.5),
+    new ProductItemContructor("d20", "Cheddar cheese", 65, "/img/Dairy/Cheddar cheese.jpg", 4.5),
 ]
 
 /* ============ functionality for Display data on page=================== */
@@ -88,7 +88,7 @@ function generateProductHtml(element, ClassName, idName) {
                         <h3 class="box-content-heading">${element.name}</h3>
                         <p>Price: &#x20b9; ${element.price} </p>
                         <div class="star">${generateStarRatingHtml(element.rating)}</div>
-                        <button class="btn">Add to cart</button>
+                        <button class="btn addToCartBtn">Add to cart</button>
                     </div>
                 </div>
             </div>`
@@ -251,20 +251,14 @@ const addToCart = (productId) => {
         carts[checkProductInCart].quantity = carts[checkProductInCart].quantity + 1; // Incrementing the quantity of the product in the cart
     }
 
-    console.log(carts); // Logging the updated cart to the console
     addCartToHTML(); // Updating the cart view in HTML
-    addToMemory(); // Storing the updated cart in local storage
 }
 
-// Function to store cart in local storage
-const addToMemory = () => {
-    localStorage.setItem('cart', JSON.stringify(carts)); // Storing the cart array in local storage after converting it to a JSON string
-}
 
 // Function to update the cart view in HTML
 const addCartToHTML = () => {
     // Clearing previous content from the cart and total price elements
-    listCartElement.innerHTML = `<h3 class="center">No item</h3>`;
+    listCartElement.innerHTML = '';
     cartTotalElement.innerHTML = '';
     let totalPrice = 0;
 
@@ -279,25 +273,27 @@ const addCartToHTML = () => {
             let itemPrice = product.price * cart.quantity; // Calculating the total price for the item
             totalPrice = totalPrice + itemPrice; // Updating the total price
             newItem.innerHTML = `<div class="shopping-cart-img">
-            <img src="${product.image}" alt="">
-        </div>
-        <div class="shopping-cart-content">
-            <h3>${product.name}</h3>
-            <div class="cart-price-quantity">
-                <span class="price">Rs.: &#x20b9; ${itemPrice}</span>
-                <div class="cart-quantity">
-                    <i class="fa-solid fa-minus minus"></i>
-                    <span class="quantity">Qty : ${cart.quantity}</span>
-                    <i class="fa-solid fa-plus plus"></i>
+                <img src="${product.image}" alt="">
+            </div>
+            <div class="shopping-cart-content">
+                <h3>${product.name}</h3>
+                <div class="cart-price-quantity">
+                    <span class="price">Rs.: &#x20b9; ${itemPrice}</span>
+                    <div class="cart-quantity">
+                        <i class="fa-solid fa-minus minus"></i>
+                        <span class="quantity">Qty : ${cart.quantity}</span>
+                        <i class="fa-solid fa-plus plus"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="cart-delete-btn">
-            <i class="fa fa-trash"></i>
-        </div>`; // Generating HTML for the item and appending it to the new div element
+            <div class="cart-delete-btn">
+                <i class="fa fa-trash"></i>
+            </div>`; // Generating HTML for the item and appending it to the new div element
 
             listCartElement.appendChild(newItem); // Appending the new div element to the cart element
         });
+    } else {
+        listCartElement.innerHTML = `<h3 class="center">No item</h3>`;
     }
     showTotalPrice(totalPrice); // Displaying the total price in the cart
 }
@@ -346,8 +342,4 @@ const changeQuantity = (productId, type) => {
     addCartToHTML(); // Updating the cart view in HTML
 };
 
-// Retrieving cart from local storage
-if (localStorage.getItem('cart')) {
-    carts = JSON.parse(localStorage.getItem('cart')); // Parsing the cart data from local storage
-    addCartToHTML(); // Updating the cart view in HTML
-}
+
