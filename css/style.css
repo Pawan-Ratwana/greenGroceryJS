@@ -148,6 +148,23 @@ body {
   color: var(--green);
 }
 
+.icons {
+  position: relative;
+}
+
+.icons span {
+  position: absolute;
+  top: -5px;
+  right: 55px;
+  font-size: 1.3rem;
+  padding: 1px 7px;
+  /* width: 25px; */
+  /* height: 25px; */
+  background-color: red;
+  text-align: center;
+  border-radius: 5px;
+}
+
 .shopping-cart {
   width: 30rem;
   position: absolute;

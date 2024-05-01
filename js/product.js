@@ -208,6 +208,7 @@ function showToggleWrapper(wrapper, button) {
 // Selecting necessary HTML elements
 const listCartElement = document.querySelector('.listCart'); // Selecting the element that will display the cart items
 const cartTotalElement = document.querySelector('.cart-total'); // Selecting the element that will display the total price
+const totalCartElement = document.querySelector('.total-cart');
 
 // Initializing arrays and combining product lists
 let carts = []; // Array to store the items in the cart
@@ -261,6 +262,7 @@ const addCartToHTML = () => {
     listCartElement.innerHTML = '';
     cartTotalElement.innerHTML = '';
     let totalPrice = 0;
+    let totalCartItem = 0;
 
     // Iterating over each item in the cart and generating HTML for display
     if (carts.length > 0) {
@@ -272,6 +274,7 @@ const addCartToHTML = () => {
             let product = productList[productIndex]; // Getting the product details from the product list
             let itemPrice = product.price * cart.quantity; // Calculating the total price for the item
             totalPrice = totalPrice + itemPrice; // Updating the total price
+            totalCartItem = totalCartItem + cart.quantity;
             newItem.innerHTML = `<div class="shopping-cart-img">
                 <img src="${product.image}" alt="">
             </div>
@@ -296,6 +299,8 @@ const addCartToHTML = () => {
         listCartElement.innerHTML = `<h3 class="center">No item</h3>`;
     }
     showTotalPrice(totalPrice); // Displaying the total price in the cart
+    console.log(totalCartItem)
+    totalCartElement.textContent = totalCartItem;
 }
 
 // Function to display total price in the cart
