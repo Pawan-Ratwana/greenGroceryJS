@@ -290,7 +290,7 @@ const addCartToHTML = () => {
                 </div>
             </div>
             <div class="cart-delete-btn">
-                <i class="fa fa-trash"></i>
+                <i class="fa fa-trash dlt-item"></i>
             </div>`; // Generating HTML for the item and appending it to the new div element
 
             listCartElement.appendChild(newItem); // Appending the new div element to the cart element
@@ -311,13 +311,15 @@ function showTotalPrice(price) {
 // Event listener for plus and minus buttons in the cart
 listCartElement.addEventListener('click', (event) => {
     let positionClick = event.target; // Getting the clicked element
-    if (positionClick.classList.contains('plus') || positionClick.classList.contains('minus')) { // Checking if the clicked element has the classes 'plus' or 'minus'
+    if (positionClick.classList.contains('plus') || positionClick.classList.contains('minus') || positionClick.classList.contains('dlt-item')) { // Checking if the clicked element has the classes 'plus' or 'minus'
         let itemElement = positionClick.closest('.row'); // Finding the closest parent element with the class 'row'
         if (itemElement) { // Checking if a valid item element is found
             const product_id = itemElement.dataset.id; // Getting the product ID from the dataset of the item element
             let type = 'minus'; // Defaulting the type to 'minus'
             if (positionClick.classList.contains('plus')) { // Checking if the clicked element has the class 'plus'
                 type = 'plus'; // Setting the type to 'plus'
+            } else if (positionClick.classList.contains('dlt-item')) {
+                type = 'dlt-item';
             }
             changeQuantity(product_id, type); // Calling the changeQuantity function with the product ID and type
         }
@@ -331,7 +333,10 @@ const changeQuantity = (productId, type) => {
         switch (type) {
             case 'plus': // If the type is 'plus'
                 carts[checkProductInCart].quantity = carts[checkProductInCart].quantity + 1; // Incrementing the quantity of the product in the cart
+                break;
 
+            case 'dlt-item':
+                carts.splice(checkProductInCart, 1)
                 break;
 
             default: // If the type is not 'plus'
