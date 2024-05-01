@@ -88,7 +88,7 @@ function generateProductHtml(element, ClassName, idName) {
                         <h3 class="box-content-heading">${element.name}</h3>
                         <p>Price: &#x20b9; ${element.price} </p>
                         <div class="star">${generateStarRatingHtml(element.rating)}</div>
-                        <div class="btn">Add to cart</div>
+                        <button class="btn">Add to cart</button>
                     </div>
                 </div>
             </div>`

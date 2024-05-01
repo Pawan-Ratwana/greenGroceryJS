@@ -556,6 +556,7 @@ body {
 
 .box .btn {
   display: block;
+  width: 100%;
 }
 
 .products .box-container .box .box-content p {
